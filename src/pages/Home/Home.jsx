@@ -9,6 +9,7 @@ export default function Home() {
     <div>
         <Header />
         <ExploreMenu category={category} setCategory={setCategory} />
+        
     </div>
   )
 }
