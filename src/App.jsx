@@ -19,11 +19,11 @@ export default function App() {
     {showLogin? <LoginPopup setShowLogin={setShowLogin} /> : <></>} 
     <div className='app'>
       <Navbar setShowLogin={setShowLogin} /> 
-      <Home />
+      {/* <Home /> */}
       <Routes >
-        <Route to="/" element={<Home/>} />
-        <Route to="/cart" element={<Cart/>} />
-        <Route to="/order" element={<PlaceOrder/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/cart" element={<Cart/>} />
+        <Route path="/order" element={<PlaceOrder/>} />
       </Routes>
     </div>
     <Footer/>
